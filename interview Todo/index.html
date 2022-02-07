@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="banner">
+             <!-- This banner has only bg -->
+        </div>
+          <div class="container">
+              <div class="heading">
+                  <h1>TODO</h1>
+                  <button id="changemode"><img src="images/icon-moon.svg"></button>
+              </div>
+              <form action="">            
+                  <input type="text" class="todo_input"  required  placeholder="Create a new todo…">
+                  <button type="submit" class="todo_button"></button>
+               </form>
+
+               <div class="todo_content">
+                    <div class="todo_container">
+                        <ul class="todo_list ">
+                            <!-- All New Todo Will be added here -->
+                        </ul>
+                        <div class="todo_list_details">
+                            <span class="todo_length">0 items left</span>
+                            <div class="button_sorts">
+                                <button class="all_btn active">All</button>
+                                <button class="uncompleted_btn">Active</button>
+                                <button class="completed_btn">Completed</button>
+                            </div>
+                            <button class="clear_all_comleted_todo">Clear All Completed</button>
+                        </div>
+                    </div>
+               </div>
+               <!-- This buttons is appear in mobile -->
+               <div class="button_sorts mobile">
+                <button class="all_btn active" >All</button>
+                <button class="uncompleted_btn">Active</button>
+                <button class="completed_btn">Completed</button>
+               </div>
+          </div>
+    </header>    
+
+ 
+    <script src="js/script.js"></script>
+</body>
+</html>
